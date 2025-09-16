@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "@Vinityadav",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "form-data": "^4.0.4",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.1",
+    "mongooses": "^1.0.0",
+    "nodemon": "^3.1.10",
+    "path": "^0.12.7",
+    "razorpay": "^2.9.6"
+  }
+}
