@@ -3,7 +3,7 @@ import cors from 'cors'
 import 'dotenv/config'
 import connectDB from './config/mongodb.js';
 import userRouter from './routes/userRouters.js';
-
+import imageRouter from './routes/imageRouters.js';
 
 const app=express();
 const PORT=process.env.PORT || 4000
@@ -14,6 +14,7 @@ app.use(cors());
 await connectDB();
 
 app.use('/api/user',userRouter);
+app.use('/api/image',imageRouter);
 app.get('/',(req,res)=>{
     res.send("server is working");
 })

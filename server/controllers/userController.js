@@ -9,7 +9,7 @@ try{
 
     if(!name || !email || !password){
        return res.json({
-              sucess:false,
+              success:false,
               message:"Missing Details"
         })
     }
@@ -24,12 +24,12 @@ try{
 
     const token=jwt.sign({id:user._id},process.env.JWT_SECRET);
     res.json({
-        sucess:true,token,user:{name:user.name}
+        success:true,token,user:{name:user.name}
     })
 }
 catch (error){
        console.log(error);
-       res.json({sucess:false,message:error.message});
+       res.json({success:false,message:error.message});
        
 }
 
@@ -42,22 +42,22 @@ const loginUser=async(req,res)=>{
         let {email,password}=req.body;
         let user=await userModel.findOne({email});
         if(!user){
-            return res.json({sucess:false,message:'User dose not exist'});
+            return res.json({success:false,message:'User dose not exist'});
         }
 
     const isMatch= await bcrypt.compare(password,user.password);
        if(isMatch){
            const token=jwt.sign({id:user._id},process.env.JWT_SECRET);
            res.json({
-           sucess:true,token,user:{name:user.name}
+           success:true,token,user:{name:user.name}
           })
 
        }else{
-        return res.json({sucess:false,message:'Invalid Credentials'})
+        return res.json({success:false,message:'Invalid Credentials'})
        }
     } catch (error) {
          console.log(error);
-         res.json({sucess:false,message:error.message});
+         res.json({success:false,message:error.message});
     }
 }
 
@@ -65,13 +65,14 @@ const loginUser=async(req,res)=>{
 const userCredit=async(req,res)=>{
     try {
          
-     let {userId}=req.body;
+    //  let {userId}=req.body;
+     let userId = req.userId; 
      let user=await userModel.findById(userId);
-     res.json({sucess:true,credits:user.creditBalance,user:{name:user.name}})
+     res.json({success:true,credits:user.creditBalance,user:{name:user.name}})
 
     } catch (error) {
         console.log(error);
-        res.json({sucess:false,message:error.message});
+        res.json({success:false,message:error.message});
     
     }
     
