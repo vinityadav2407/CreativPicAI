@@ -78,18 +78,23 @@ MONGO_URI=your-mongodb-uri
 JWT_SECRET=your-jwt-secret
 
 # Razorpay
-RAZORPAY_KEY=your-razorpay-key
-RAZORPAY_SECRET=your-razorpay-secret
+RAZORPAY_KEY_ID='your-razorpay-key'
+RAZORPAY_SECRET='your-razorpay-secret'
 
 # ClipDrop
-CLIPDROP_API_KEY=your-clipdrop-api-key
+CLIPDROP_API='your-clipdrop-api-key'
+
+JWT_SECRET='XYZ'
+MONGODB_ATLAS_URL='mongodb+srv://XYZ'
+CURRENCY="INR"
+
 ```
 
 Example client/.env
 ```base
 
-VITE_BACKEND_URL=http://localhost:4000
-VITE_RAZORPAY_KEY=your-razorpay-key
+VITE_BACKEND_URL='http://localhost:4000'
+VITE_RAZORPAY_KEY_ID='your-razorpay-key'
 
 ```
 ### 4️⃣ Run the application
@@ -97,7 +102,7 @@ VITE_RAZORPAY_KEY=your-razorpay-key
 Start backend
 ``` base
 cd server
-npm run dev
+node .\server.js 
 ```
 
 Start frontend
