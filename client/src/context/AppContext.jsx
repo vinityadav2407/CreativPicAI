@@ -14,7 +14,7 @@ const AppContextProvider=(props)=>{
      let [token ,setToken]=useState(localStorage.getItem('token'));
      let [credit,setCredit]=useState(false);
       
-     let backendUrl=import.meta.env.VITE_BACKEND_URL; 
+     let backendUrl='https://creativpicai.onrender.com'; 
      let nevigate=useNavigate();
 
      const loadCreditsData= async ()=>{
