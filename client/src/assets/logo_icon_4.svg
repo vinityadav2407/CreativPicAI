@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" height="38" viewBox="0 0 200 38" width="200">
+  <ns0:g transform="translate(0,0.950 scale(1.164516)">
+    <ns0:rect fill="#1e3a8a" height="31" rx="6" width="31"/>
+    <ns0:circle cx="15.5" cy="15.5" fill="url(#glowGradient)" opacity="0.8" r="10"/>
+    <ns0:circle cx="15.5" cy="15.5" fill="url(#lensGradient)" r="6.5" stroke="#60a5fa" stroke-width="1.2"/>
+    <ns0:circle cx="15.5" cy="15.5" fill="#3b82f6" r="2.5" stroke="#93c5fd" stroke-width="1"/>
+    <ns0:g stroke="#facc15" stroke-linecap="round" stroke-width="1.2">
+      <ns0:line x1="15.5" x2="15.5" y1="4" y2="7"/>
+      <ns0:line x1="15.5" x2="15.5" y1="24" y2="27"/>
+      <ns0:line x1="4" x2="7" y1="15.5" y2="15.5"/>
+      <ns0:line x1="24" x2="27" y1="15.5" y2="15.5"/>
+    </ns0:g>
+    <ns0:defs>
+      <ns0:radialGradient cx="50%" cy="50%" id="glowGradient" r="50%">
+        <ns0:stop offset="0%" stop-color="#60a5fa" stop-opacity="0.6"/>
+        <ns0:stop offset="100%" stop-color="#1e3a8a" stop-opacity="0"/>
+      </ns0:radialGradient>
+      <ns0:radialGradient cx="50%" cy="50%" id="lensGradient" r="50%">
+        <ns0:stop offset="0%" stop-color="#3b82f6"/>
+        <ns0:stop offset="100%" stop-color="#1e40af"/>
+      </ns0:radialGradient>
+    </ns0:defs>
+  </ns0:g>
+  <ns0:text fill="#000000" font-size="103.67999999999999px" font-weight="bold" stroke="black" stroke-width="0.6" style="font-family: Arial, Helvetica, sans-serif;font-size:24.479999999999997px; font-weight:700; text-anchor:middle; dominant-baseline:central;" x="105.0" y="19.0">CreativPicAI</ns0:text>
+</ns0:svg>
